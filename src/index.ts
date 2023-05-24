@@ -43,9 +43,9 @@ function generate(logs: Options[][]) {
 
   function replace(text: string) {
     return text
-      .replace('{_NAME_}', packageJSON.name)
-      .replace('{_VERSION_}', packageJSON.version)
-      .replace('{_TIME_}', new Date().toLocaleString())
+      .replace('{_name_}', packageJSON.name)
+      .replace('{_version_}', packageJSON.version)
+      .replace('{_time_}', new Date().toLocaleString())
   }
 
   return `${JSON.stringify(prints)}.forEach(log => console.log(log.text, ...log.style));`
