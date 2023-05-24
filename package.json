@@ -1,20 +1,17 @@
 {
-  "name": "pkg-name",
+  "name": "vite-plugin-logs",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@8.1.1",
   "description": "",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "author": "Hairyf",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/pkg-name#readme",
+  "homepage": "https://github.com/hairyf/vite-plugin-logs#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/pkg-name.git"
+    "url": "git+https://github.com/hairyf/vite-plugin-logs.git"
   },
-  "bugs": "https://github.com/antfu/pkg-name/issues",
-  "keywords": [],
-  "sideEffects": false,
+  "bugs": "https://github.com/hairyf/vite-plugin-logs/issues",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -46,11 +43,16 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "fs-extra": "^11.1.1"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.4",
     "@antfu/ni": "^0.21.2",
     "@antfu/utils": "^0.7.2",
+    "@types/fs-extra": "^11.0.1",
     "@types/node": "^18.15.11",
+    "@vue/runtime-dom": "^3.3.4",
     "bumpp": "^9.1.0",
     "eslint": "^8.37.0",
     "esno": "^0.16.3",
